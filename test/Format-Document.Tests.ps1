@@ -44,7 +44,7 @@ Describe 'Format-Document' {
             $expected = @(
                 '# My Text',
                 [System.Environment]::NewLine,
-                '# Heading 2',
+                '## Heading 2',
                 [System.Environment]::NewLine,
                 '01/01/2023 00:00:00',
                 [System.Environment]::NewLine,
@@ -74,7 +74,7 @@ Describe 'Format-Document' {
         BeforeAll {
             $expected = @('<h1>My Text</h1>',
                 [System.Environment]::NewLine,
-                '<h1>Heading 2</h1>',
+                '<h2>Heading 2</h2>',
                 [System.Environment]::NewLine,
                 '<p>01/01/2023 00:00:00</p>',
                 [System.Environment]::NewLine,
@@ -103,7 +103,7 @@ Describe 'Format-Document' {
         BeforeAll {
             $expected = @('<h1>My Text</h1>',
                 [System.Environment]::NewLine,
-                '<h1>Heading 2</h1>',
+                '<h2>Heading 2</h2>',
                 [System.Environment]::NewLine,
                 '<p>01/01/2023 00:00:00</p>',
                 [System.Environment]::NewLine,
