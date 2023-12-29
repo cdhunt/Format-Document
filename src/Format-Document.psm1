@@ -16,7 +16,7 @@ Horizontal = <hr />
 Link-External = <a href="{1}">{0}</a>
 Table = <table>{0}</table>
 Table-Body = <tbody>{0}</tbody>
-Table-Row = <tr>{0}<tr>
+Table-Row = <tr>{0}</tr>
 Table-Head = <th>{0}</th>
 Table-Data = <td>{0}</td>
 Emoticons-Smile = <ac:emoticon ac:name="smile" />
