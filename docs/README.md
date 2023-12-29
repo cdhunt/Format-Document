@@ -12,6 +12,7 @@ Helper for formatting web documents.
 - [New-Paragraph](New-Paragraph.md) _Add a Paragraph block._
 - [New-Strong](New-Strong.md) _Add Bold/Strong text._
 - [New-Table](New-Table.md) _Add a new Table block._
+- [New-TableBody](New-TableBody.md) _Add a new TBody block._
 - [New-TableData](New-TableData.md) _Add a new Table Data block._
 - [New-TableHead](New-TableHead.md) _Add a new Table Heading block._
 - [New-TableRow](New-TableRow.md) _Add a new Table Row block._

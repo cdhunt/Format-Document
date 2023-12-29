@@ -21,17 +21,19 @@ BeforeAll {
             }
 
             Table {
-                TR {
-                    TH @("Heading 1", "Heading 2")
-                }
+                TBody {
+                    TR {
+                        TH @("Heading 1", "Heading 2")
+                    }
 
-                TR {
-                    TD -Text "Fun"
-                    TD -Text "Moar Fun"
-                }
+                    TR {
+                        TD -Text "Fun"
+                        TD -Text "Moar Fun"
+                    }
 
-                TR {
-                    TD @("Item 1", "Item 2")
+                    TR {
+                        TD @("Item 1", "Item 2")
+                    }
                 }
             }
         }
@@ -81,10 +83,10 @@ Describe 'Format-Document' {
                 '<p>normal text  <strong>bold text cmdlet</strong> . <a href="https://google.com">link Text</a></p>',
                 [System.Environment]::NewLine,
                 @'
-<table class="table table-striped">
-<tr><th>Heading 1</th> <th>Heading 2</th><tr>
-<tr><td>Fun</td> <td>Moar Fun</td><tr>
-<tr><td>Item 1</td> <td>Item 2</td><tr></table>
+<table class="table table-striped"><tbody>
+<tr><th>Heading 1</th> <th>Heading 2</th></tr>
+<tr><td>Fun</td> <td>Moar Fun</td></tr>
+<tr><td>Item 1</td> <td>Item 2</td></tr></tbody></table>
 '@)
         }
 
@@ -110,10 +112,10 @@ Describe 'Format-Document' {
                 '<p>normal text  <strong>bold text cmdlet</strong> . <a href="https://google.com">link Text</a></p>',
                 [System.Environment]::NewLine,
                 @'
-<table>
-<tr><th>Heading 1</th> <th>Heading 2</th><tr>
-<tr><td>Fun</td> <td>Moar Fun</td><tr>
-<tr><td>Item 1</td> <td>Item 2</td><tr></table>
+<table><tbody>
+<tr><th>Heading 1</th> <th>Heading 2</th></tr>
+<tr><td>Fun</td> <td>Moar Fun</td></tr>
+<tr><td>Item 1</td> <td>Item 2</td></tr></tbody></table>
 '@)
         }
 
