@@ -6,7 +6,7 @@ The same template can be rendered to any one of the following formats which rend
 Formats supported:
 
 - Markdown ([GitHub-flavored](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax))
-- Confluence Storage Format
+- [Confluence Storage Format](https://confluence.atlassian.com/doc/confluence-storage-format-790796544.html)
 - Html (with [Bootstrap](https://getbootstrap.com/) class decorations)
 
 You can use this to automatically maintain and synchronize documentation in multiple formats such as READMEs and Confluence Wiki.
