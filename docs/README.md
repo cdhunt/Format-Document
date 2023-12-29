@@ -5,6 +5,7 @@ Helper for formatting web documents.
 ## Commands
 
 - [New-Document](New-Document.md) _Create a new Document object of a given Type._
+- [New-Emphasis](New-Emphasis.md) _Add Emphasis/Italics text._
 - [New-Heading1](New-Heading1.md) _Add an H1 Heading._
 - [New-Heading2](New-Heading2.md) _Add an H2 Heading._
 - [New-Heading3](New-Heading3.md) _Add an H3 Heading._

@@ -18,6 +18,7 @@ BeforeAll {
                 B "bold text cmdlet"
                 "."
                 Link "link Text" "https://google.com"
+                I "emphasis"
             }
 
             Table {
@@ -50,7 +51,7 @@ Describe 'Format-Document' {
                 [System.Environment]::NewLine,
                 '01/01/2023 00:00:00',
                 [System.Environment]::NewLine,
-                'normal text  **bold text cmdlet** . [link Text](https://google.com)',
+                'normal text  **bold text cmdlet** . [link Text](https://google.com) _emphasis_',
                 [System.Environment]::NewLine,
                 @'
 
@@ -80,7 +81,7 @@ Describe 'Format-Document' {
                 [System.Environment]::NewLine,
                 '<p>01/01/2023 00:00:00</p>',
                 [System.Environment]::NewLine,
-                '<p>normal text  <strong>bold text cmdlet</strong> . <a href="https://google.com">link Text</a></p>',
+                '<p>normal text  <strong>bold text cmdlet</strong> . <a href="https://google.com">link Text</a> <em>emphasis</em></p>',
                 [System.Environment]::NewLine,
                 @'
 <table class="table table-striped"><tbody>
@@ -109,7 +110,7 @@ Describe 'Format-Document' {
                 [System.Environment]::NewLine,
                 '<p>01/01/2023 00:00:00</p>',
                 [System.Environment]::NewLine,
-                '<p>normal text  <strong>bold text cmdlet</strong> . <a href="https://google.com">link Text</a></p>',
+                '<p>normal text  <strong>bold text cmdlet</strong> . <a href="https://google.com">link Text</a> <em>emphasis</em></p>',
                 [System.Environment]::NewLine,
                 @'
 <table><tbody>

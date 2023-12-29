@@ -67,7 +67,7 @@ $manifest = @{
     CmdletsToExport      = ''
     VariablesToExport    = ''
     AliasesToExport      = @('H1', 'Heading1', 'Header1', 'H2', 'Heading2', 'Header2', 'H3', 'Heading3', 'Header3',
-        'P', 'B', 'A', 'Link', 'Href',
+        'P', 'B', 'I', 'em', 'A', 'Link', 'Href',
         'Table', 'TBody', 'TR', 'TH', 'TD')
 }
 
