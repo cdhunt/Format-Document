@@ -53,8 +53,8 @@ Emoticons-Smile = <ac:emoticon ac:name="smile" />
 Emoticons-Sad = <ac:emoticon ac:name="sad" />
 Emoticons-cheeky = <ac:emoticon ac:name="cheeky" />
 Emoticons-information = <ac:emoticon ac:name="information" />
-Emoticons-tick = <ac:emoticon ac:name="tick" />
-Emoticons-cross = <ac:emoticon ac:name="cross" />
+Emoticons-tick = <i class="bi bi-check2-square"></i>
+Emoticons-cross = <i class="bi bi-x" style="color: red;"></i>
 Emoticons-warning = <ac:emoticon ac:name="warning" />
 '@
 
@@ -82,7 +82,12 @@ Emoticons-Smile = :smile:
 Emoticons-Sad = :sad:
 Emoticons-cheeky = :cheeky:
 Emoticons-information = :information:
-Emoticons-tick = :tick:
-Emoticons-cross = :cross:
+Emoticons-tick = :white_check_mark:
+Emoticons-cross = :x:
 Emoticons-warning = :warning:
 '@
+
+# https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html
+$ReStructuredTextFormat = @'
+'@
+

@@ -67,7 +67,7 @@ $manifest = @{
     CmdletsToExport      = ''
     VariablesToExport    = ''
     AliasesToExport      = @('H1', 'Heading1', 'Header1', 'H2', 'Heading2', 'Header2', 'H3', 'Heading3', 'Header3',
-        'P', 'B', 'I', 'em', 'A', 'Link', 'Href',
+        'P', 'B', 'I', 'em', 'A', 'Link', 'Href', ':x:', 'cross', ':white_check_mark:', 'tick',
         'Table', 'TBody', 'TR', 'TH', 'TD')
 }
 
@@ -235,5 +235,6 @@ switch ($Task) {
     Default {
         Clean
         Build
+        Docs
     }
 }

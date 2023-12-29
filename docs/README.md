@@ -5,6 +5,8 @@ Helper for formatting web documents.
 ## Commands
 
 - [New-Document](New-Document.md) _Create a new Document object of a given Type._
+- [New-EmojiCross](New-EmojiCross.md) _Add :x: emoji_
+- [New-EmojiTick](New-EmojiTick.md) _Add :white_check_mark: emoji_
 - [New-Emphasis](New-Emphasis.md) _Add Emphasis/Italics text._
 - [New-Heading1](New-Heading1.md) _Add an H1 Heading._
 - [New-Heading2](New-Heading2.md) _Add an H2 Heading._
