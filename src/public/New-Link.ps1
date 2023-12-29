@@ -41,5 +41,5 @@ function New-Link {
         $Text = $TextBlock.Invoke()
         $Uri = $UriBlock.Invoke()
     }
-    $formatter["Link-External"] -f $Text, $Uri
+    $formatter["Link-External"] -f $Text, [Web.Httputility]::HtmlEncode($Uri)
 }
