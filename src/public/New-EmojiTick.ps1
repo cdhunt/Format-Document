@@ -9,7 +9,7 @@ function New-EmojiTick {
     .EXAMPLE
         New-Document -Type Confluence { P { tick } }
 
-        Create an Html document with the contents `<p><ac:emoticon ac:name="tick" /></i></p>`
+        Create an Confluence document with the contents `<p><ac:emoticon ac:name="tick" /></i></p>`
     #>
     [CmdletBinding()]
     [Alias(':white_check_mark:', 'tick')]
