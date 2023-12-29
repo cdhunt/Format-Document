@@ -39,7 +39,6 @@ New-Document -Type Markdown {
     P { Get-Date }
     P {
         "normal text"
-        "bold text ScriptParamter".Bold
         B "bold text cmdlet"
         "."
         Link "link Text" "https://google.com"
