@@ -36,7 +36,7 @@ function New-TableData {
     )
 
     if ($PSBoundParameters.ContainsKey('TextBlock')) {
-        $Text = $TextBlock.Invoke()
+        $Text = $TextBlock.Invoke() -join [System.Environment]::NewLine
     }
 
     $Text | ForEach-Object {
