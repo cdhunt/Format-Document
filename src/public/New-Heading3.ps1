@@ -23,5 +23,5 @@ function New-Heading3 {
         $Text
     )
 
-    New-Header -Heading 3 @PSBoundParameters | Write-Output
+    New-Heading -Heading 3 @PSBoundParameters | Write-Output
 }

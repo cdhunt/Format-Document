@@ -1,4 +1,4 @@
-function New-Header {
+function New-Heading {
     [CmdletBinding()]
     param (
         [Parameter(Position = 0)]
