@@ -11,7 +11,7 @@ function New-Document {
 #>
     [CmdletBinding()]
     param (
-        [Parameter(Mandatory, Position = 0)]
+        [Parameter(Mandatory, Position = 0, ValueFromPipeline)]
         [scriptblock]
         $Document,
 

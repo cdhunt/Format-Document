@@ -132,6 +132,19 @@ Describe 'Format-Document' {
         }
 
     }
+
+    Context 'Content by Pipeline' {
+        It 'New-Document should accept a scriptblock by pipeline' {
+            $doc = {
+                H1 "My Text"
+            }
+            $resultMd = $doc | New-Document
+            $resultHtml = $doc | New-Document -Type 'Html/Bootstrap'
+
+            $resultMd | Should -Contain '# My Text'
+            $resultHtml | Should -Contain '<h1>My Text</h1>'
+        }
+    }
 }
 
 
