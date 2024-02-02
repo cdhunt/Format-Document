@@ -13,13 +13,19 @@ You can use this to automatically maintain and synchronize documentation in mult
 
 ## CI Status
 
-[![PowerShell](https://github.com/cdhunt/Format-Document/actions/workflows/powershell.yml/badge.svg)](https://github.com/cdhunt/Format-Document/actions/workflows/powershell.yml)
+![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/cdhunt/Format-Document/powershell.yml?style=flat&logo=github)
+[![Testspace pass ratio](https://img.shields.io/testspace/pass-ratio/cdhunt/cdhunt%3AFormat-Document/main)](https://cdhunt.testspace.com/projects/67973/spaces)
+[![PowerShell Gallery](https://img.shields.io/powershellgallery/v/Format-Document.svg?color=%235391FE&label=PowerShellGallery&logo=powershell&style=flat)](https://www.powershellgallery.com/packages/Format-Document)
+
+![Build history](https://buildstats.info/github/chart/cdhunt/Format-Document?branch=main)
 
 ## Install
 
 [powershellgallery.com/packages/Format-Document](https://www.powershellgallery.com/packages/Format-Document)
 
 `Install-Module -Name Format-Document` or `Install-PSResource -Name Format-Document`
+
+![PowerShell Gallery](https://img.shields.io/powershellgallery/dt/httpunitps?color=%235391FE&style=flat)
 
 ## Docs
 

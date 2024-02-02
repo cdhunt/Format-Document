@@ -125,11 +125,20 @@ function Build {
 function Test {
     param ()
 
-    if ($null -eq (Get-Module Pester -ListAvailable)) {
-        Install-Module -Name Pester -Confirm:$false -Force
+    if ($null -eq (Get-Module Pester -ListAvailable | Where-Object { [version]$_.Version -ge [version]"5.5.0" })) {
+        Install-Module -Name Pester -MinimumVersion 5.5.0 -Confirm:$false -Force
     }
 
-    Invoke-Pester -Path test -Output detailed
+    $config = New-PesterConfiguration -Hashtable @{
+        Run        = @{ Path = "test" }
+        TestResult = @{
+            Enabled      = $true
+            OutputFormat = "NUnitXml"
+        }
+        Output     = @{ Verbosity = "Detailed" }
+    }
+
+    Invoke-Pester -Configuration $config
 }
 
 
