@@ -95,10 +95,6 @@ jobs:
         shell: pwsh
         run: ./build.ps1 test
 
-      - name: Test
-        shell: pwsh
-        run: ./build.ps1 test
-
       - name: Publish Results to Testspace
         run: testspace "[v${{ matrix.pwshv }}]testResults.xml"
 
